@@ -84,13 +84,13 @@
 
     {#if alsoShipped.length}
       <div class="also">
-        <div class="also-head reveal">
+        <div class="also-head" use:reveal>
           <span class="eyebrow">also shipped</span>
           <p>Production work without a full case study here — real, shipped, and part of the picture.</p>
         </div>
         <div class="also-grid">
           {#each alsoShipped as p}
-            <div class="mini reveal">
+            <div class="mini" use:reveal>
               <div class="card-type">
                 {p.card.type}
                 {#each p.card.badges as b}<span class="badge">{b}</span>{/each}

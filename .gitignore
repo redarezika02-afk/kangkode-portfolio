@@ -1,0 +1,11 @@
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Keep the CV (contains a phone number) out of the public repo
+static/Reda_Rezika_CV.pdf

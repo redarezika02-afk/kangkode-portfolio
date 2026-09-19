@@ -7,6 +7,12 @@ export const profile = {
   role: 'Fullstack Developer',
   location: 'Bogor / Jakarta, ID',
 
+  // SEO / social sharing
+  url: 'https://kangkode.dev',
+  description:
+    'Reda Rezika — fullstack developer building multi-tenant SaaS end to end: backend, web, mobile, infra, and UI/UX. Case studies across HRIS, recruitment, F&B, and community platforms.',
+  ogImage: '/og.png',
+
   status: 'Open for select freelance & full-time roles',
 
   hero: {

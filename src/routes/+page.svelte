@@ -7,6 +7,7 @@
   import { projects } from '$lib/data/projects.js';
   import ProjectCard from '$lib/components/ProjectCard.svelte';
   import StrataStrip from '$lib/components/StrataStrip.svelte';
+  import Seo from '$lib/components/Seo.svelte';
   import Icon from '$lib/components/Icon.svelte';
 
   // Projects with a full case study go in the main grid; the rest go in "Also shipped".
@@ -18,9 +19,7 @@
   onMount(() => (built = true));
 </script>
 
-<svelte:head>
-  <title>{profile.name} — {profile.role} · Kangkode</title>
-</svelte:head>
+<Seo title="{profile.name} — {profile.role} · Kangkode" path="/" />
 
 <!-- HERO -->
 <section class="hero" id="top">

@@ -5,6 +5,7 @@
   import { projects } from '$lib/data/projects.js';
   import BrowserFrame from '$lib/components/BrowserFrame.svelte';
   import CaseSection from '$lib/components/CaseSection.svelte';
+  import Seo from '$lib/components/Seo.svelte';
   import Icon from '$lib/components/Icon.svelte';
 
   export let data;
@@ -16,9 +17,11 @@
   $: next = caseList[(idx + 1) % caseList.length];
 </script>
 
-<svelte:head>
-  <title>{project.name} — Case study · {profile.name}</title>
-</svelte:head>
+<Seo
+  title="{project.name} — Case study · {profile.name}"
+  description={project.card.desc.replace(/<[^>]+>/g, '')}
+  path="/work/{project.slug}"
+  image={project.hero.shot.src} />
 
 <!-- HERO -->
 <section class="chero">

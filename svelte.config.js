@@ -11,7 +11,10 @@ const config = {
       fallback: undefined,
       precompress: false,
       strict: true
-    })
+    }),
+    prerender: {
+      entries: ['*', '/sitemap.xml']
+    }
     // If you ever deploy under a sub-path, set:
     // paths: { base: '/your-subpath' }
   }
